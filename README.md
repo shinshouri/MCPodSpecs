@@ -18,10 +18,14 @@ $ pod repo push PrivateTrunk PodLogin.podspec --verbose --allow-warnings
 
 On the project you will be using / installing the pod,
 add this following line at the top of your podfile
+
 source 'http://gitlab.digital.id.aia.biz/icare/privatetrunk.git'
 source 'https://github.com/CocoaPods/Specs.git'
+
 and then as usual on your podfile:
+
 pod 'PodLogin', '0.0.3'
+
 for pod install, to check if there is any update in the PrivateTrunk better put --repo-update when installing
 $ pod install --repo-update
 
